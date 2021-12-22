@@ -25,6 +25,11 @@ if [ "$(date +%u)" = 7 ]; then
     || bashio::exit.nok "Could not check archive integrity."
 fi
 
+for i in /backup/*.tar; do
+  backup_info="$i: $(tar xf "$i" ./backup.json -O 2> /dev/null | jq -r '[.name, .date] | join(" | ")' || true)"
+  bashio::log.info "Backing up $backup_info"
+done
+
 bashio::log.info 'Uploading backup.'
 /usr/bin/borg create $(bashio::config 'create_options') \
   "::$(bashio::config 'archive')-{utcnow}" /backup \
