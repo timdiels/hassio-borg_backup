@@ -26,7 +26,8 @@ if [ "$(date +%u)" = 7 ]; then
 fi
 
 bashio::log.info 'Uploading backup.'
-/usr/bin/borg create "::$(bashio::config 'archive')-{utcnow}" /backup \
+/usr/bin/borg create $(bashio::config 'create_options') \
+  "::$(bashio::config 'archive')-{utcnow}" /backup \
   || bashio::exit.nok "Could not upload backup."
 
 bashio::log.info 'Pruning old backups.'

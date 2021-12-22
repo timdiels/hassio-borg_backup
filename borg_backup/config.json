@@ -18,6 +18,7 @@
     "path": "~",
     "archive": "hassio",
     "passphrase": null,
+    "create_options": "--stats --compression auto,zstd",
     "prune_options": "--keep-daily=8 --keep-weekly=5 --keep-monthly=13",
     "local_snapshot": 3
   },
@@ -29,6 +30,7 @@
     "archive": "str",
     "passphrase": "password",
     "prune_options": "str?",
+    "create_options": "str?",
     "local_snapshot": "int(0,)?"
   },
   "arch": [
