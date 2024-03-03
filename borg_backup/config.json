@@ -18,7 +18,7 @@
     "path": "~",
     "archive": "hassio",
     "passphrase": null,
-    "create_options": "--stats --compression auto,zstd",
+    "create_options": "--stats",
     "prune_options": "--keep-daily=8 --keep-weekly=5 --keep-monthly=13",
     "local_snapshot": 3,
     "reset_hostkeys": false
