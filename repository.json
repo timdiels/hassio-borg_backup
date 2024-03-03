@@ -1,5 +1,5 @@
 {
-  "name": "Hassio Add-On Borg Backup - Fork by frigi83",
-  "url": "https://github.com/frigi83/hassio-borg_backup",
+  "name": "Hassio Add-On Borg Backup - forked from frigi83 and yeah",
+  "url": "https://github.com/timdiels/hassio-borg_backup",
   "maintainer": "Mauro"
 }
