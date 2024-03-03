@@ -1,6 +1,6 @@
 {
   "name": "BorgBackup",
-  "version": "0.60.0",
+  "version": "0.60.1",
   "slug": "borg_backup",
   "description": "BorgBackup as a Hassio Add-On - forked from 3v1n0, frigi83, dkolb and yeah",
   "url": "https://github.com/timdiels/hassio-borg_backup",
